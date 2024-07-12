@@ -1,24 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/header.tsx'
+import Card from './components/card/card.tsx'
+import Wrapper from './components/wrapper/wrapper.tsx'
+
+import bauman_logo from "./icons/bauman_logo.svg"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper className="App">
+      <Header />
+      <Card title = {"Капец тут тайтл"} desc = {"А описание еще интереснее"} photo = {bauman_logo} />
+    </Wrapper>
   );
 }
 
